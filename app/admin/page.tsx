@@ -117,7 +117,7 @@ export default function AdminPage() {
         const uploadData = lines.slice(1).map((line: string) => {
           const values = line.split(',');
           const breakdown: any = {};
-          dynamicKeys.forEach((key, i) => {
+          dynamicKeys.forEach((key: string, i: number) => {
             // 上传时也确保处理为 0.5 单位
             const v = parseFloat(values[i + 3]) || 0;
             breakdown[key] = (Math.round(v * 2) / 2).toString();
