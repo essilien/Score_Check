@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase'; // 确保你之前创建了这个文件
+import { supabase } from '@/lib/supabase';
 
 export default function TeacherModule() {
   const [email, setEmail] = useState('');
